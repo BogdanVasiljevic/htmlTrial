@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Image Processing</title>
+  <meta name="description" content="Image Processing">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+  <div class="main-section">
+    <div class="section-header">
+      <div class="col-6 p-0 left-col">
+        <div class="brd-button bg-gray">
+          <i class="fa fa-caret-left" aria-hidden="true"></i>
+        </div>
+        <div class="brd-button brd-blue switch-button">
+        </div>
+        <div class="dropdown show custom-dropdown">
+          <a class="btn dropdown-toggle custom-dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            ARTWORK
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" data-val="IDEA" href="#">IDEA</a>
+            <a class="dropdown-item" data-val="SPACE" href="#">SPACE</a>
+            <a class="dropdown-item" data-val="ARTWORK" href="#">ARTWORK</a>
+            <a class="dropdown-item" data-val="PRINT" href="#">PRINT</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 p-0 right-col">
+        <div class="brd-button">
+          <img src="assets/images/upload-icon.png" alt="upload-icon" />
+        </div>
+        <div class="brd-button">
+          <img src="assets/images/download-icon.png" alt="upload-icon" />
+        </div>
+        <div class="brd-button">
+          <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </div>
+        <div class="brd-button m-0">
+          <img src="assets/images/share-icon.png" alt="upload-icon" />
+        </div>
+      </div>
+
+    </div>
+    <div class="section-body">
+      <div class="img">
+      </div>
+      <div class="text title ft-white">Flackstad</div>
+      <div class="text description ft-white">Beautiful landscape of Flackstad Iceland</div>
+      <div class="text badge ft-white">IDEA</div>
+    </div>
+    <div class="section-footer">
+      <div class="col-6 p-0 left-col">
+        <div class="brd-button">1</div>
+        <div class="brd-button">2</div>
+        <div class="brd-button">3</div>
+        <div class="brd-button">4</div>
+        <div class="brd-button">
+          <img src="assets/images/scale-in.png" alt="scale-in" />
+        </div>
+      </div>
+      <div class="col-6 p-0 right-col">
+        <div class="functions hidden">
+          <div class="brd-button func-btn">
+            <img src="assets/images/text-func-icon-active.png" alt="text-func-active" class="active" />
+            <img src="assets/images/text-func-icon-active.png" alt="tex-func-inactive" class="inactive" />
+          </div>
+          <div class="brd-button func-btn">
+            <img src="assets/images/add-img-active.png" alt="add-img-func-active" class="active" />
+            <img src="assets/images/add-img.png" alt="add-img-func-inactive" class="inactive" />
+          </div>
+          <div class="brd-button func-btn">
+            <img src="assets/images/micel-func-icon-active.png" alt="micel-func-active" class="active" />
+            <img src="assets/images/micel-func-icon.png" alt="micel-func-inactive" class="inactive" />
+          </div>
+        </div>
+        <div class="brd-button" id="toggle-functions">
+          <img src="assets/images/toggle-functions-active.png" alt="toggle-function" class="active"/>
+          <img src="assets/images/toggle-functions.png" alt="toggle-function-inactive" class="inactive" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <script  src="https://code.jquery.com/jquery-3.4.0.js"  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
